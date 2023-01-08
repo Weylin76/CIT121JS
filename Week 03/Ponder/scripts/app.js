@@ -133,3 +133,4 @@ const numbers2 = [12,34,21,54];
 const luckyNumber2 = 21;
 let results2 = (numbers2.includes(luckyNumber2));
 document.querySelector('#luckyNum2').innerHTML = results2;
+
