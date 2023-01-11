@@ -10,24 +10,53 @@ function add(number1, number2){
 
 // Step 3: Step 3: Using function declaration, define another function named addNumbers that gets the values of two HTML form controls with IDs of addend1 and addend2. Pass them to the add function
 function addNumbers(){
-    let addend1 = parseFloat(document.getElementById('addend1').value);
-    let addend2= parseFloat(document.getElementById('addend2').value);
-    let results = add(addend1, addend2);
+    const addend1 = parseFloat(document.getElementById('addend1').value);
+    const addend2= parseFloat(document.getElementById('addend2').value);
+    const results = add(addend1, addend2);
 
 // Step 4: Assign the return value to an HTML form element with an ID of sum
     document.querySelector('#sum').value = results;
 }
 // Step 5: Add a "click" event listener to the HTML button with an ID of addNumbers that calls the addNumbers function
-let addingbtn = document.getElementById('addNumbers');
-addingbtn.addEventListener('click', addNumbers);
-// let btnDoubled = document.getElementById('doubleNum');
-// btnDoubled.addEventListener('click', double)
+document.getElementById('addNumbers').addEventListener('click', addNumbers);
 
 // Step 6: Using function expressions, repeat Steps 1-5 with new functions named subtract and subtractNumbers and HTML form controls with IDs of minuend, subtrahend, difference and subtractNumbers
+const subtract = function (minuend, subtrahend){ 
+    return minuend - subtrahend
+}
+
+const subtractNumbers = function (){
+    const minuend = parseFloat(document.getElementById('minuend').value);
+    const subtrahend = parseFloat(document.getElementById('subtrahend').value);
+    const difference = subtract(minuend,subtrahend);
+    document.querySelector('#difference').value = difference;
+    }
+
+document.getElementById('subtractNumbers').addEventListener('click', subtractNumbers);
 
 // Step 7: Using arrow functions, repeat Steps 1-5 with new functions named multiply and mulitplyNumbers and HTML form controls with IDs of factor1, factor2, product and multiplyNumbers
+const multiply = (factor1, factor2) => factor1 * factor2
+
+const mulitplyNumbers = () => {
+    const factor1 = parseFloat(document.getElementById('factor1').value);
+    const factor2 = parseFloat(document.getElementById('factor2').value);
+    const product = multiply(factor1,factor2);
+    document.getElementById('product').value = product;
+}
+
+document.getElementById('multiplyNumbers').addEventListener('click', mulitplyNumbers);
 
 // Step 8: Using any of the three function declaration types, repeat Steps 1-5 with new functions named divide and divideNumbers and HTML form controls with IDs of dividend, divisor, quotient and divideNumbers
+const divide = (dividend, divisor) => dividend / divisor;
+
+const divideNumbers = () => {
+    const dividend = parseFloat(document.getElementById('dividend').value);
+    const divisor = parseFloat(document.getElementById('divisor').value);
+    const quotient = divide(dividend,divisor);
+    document.getElementById('quotient').value = quotient;
+}
+
+document.getElementById('divideNumbers').addEventListener('click', divideNumbers);
 
 // Step 9: Test all of the mathematical functionality of the task3.html page.
 
