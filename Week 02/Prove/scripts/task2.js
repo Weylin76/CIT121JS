@@ -17,12 +17,12 @@ document.querySelector('#year').innerHTML = year;
 
 // Step 5: declare and instantiate a variable to hold the name of your picture
 
-const selfportrait = document.querySelector('img');
+const selfportrait =  'images/selfPortrait.jpg';
 
 // Step 6: copy your image into the "images" folder
 
 // Step 7: place the value of the picture variable into the HTML file (hint: document.querySelector().setAttribute())
-selfportrait.setAttribute('src', 'images/selfPortrait.jpg');
+document.querySelector('img').setAttribute('src', selfportrait);
 
 /* ARRAYS */
 
