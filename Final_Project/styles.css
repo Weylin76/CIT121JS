@@ -1,0 +1,19 @@
+.pokemon{
+    display: inline-block;
+    text-align: center;
+    background-color: crimson;
+    font-style: oblique;
+    color:aliceblue;
+}
+.pokemon img{
+    display: block;
+    background-color: blue;
+}
+h1{
+    color: red;
+    font-weight: bold;
+}
+h2{
+    color:rgb(77, 41, 221);
+    font-family: 'Courier New', Courier, monospace;
+}
