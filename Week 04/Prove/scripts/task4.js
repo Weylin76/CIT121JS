@@ -31,7 +31,6 @@ myInfo.placesLived = [
     ,length: "15 years"
 }];
 
-
 /* OUTPUT */
 
 // Step 1: Assign the value of the name property (of the object declared above) to the HTML <span> element with an ID of name
