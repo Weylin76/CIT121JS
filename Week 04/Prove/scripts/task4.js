@@ -68,8 +68,11 @@ myInfo.placesLived.forEach((placeLived) =>{
     let timeLived = document.createElement('dd');
     timeLived.textContent = placeLived.length;
 
+    
     document.querySelector('#places-lived').appendChild(places);
     document.querySelector('#places-lived').appendChild(timeLived);
 });
+
+
 
 
