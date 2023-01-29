@@ -16,11 +16,11 @@
         <dl id="places-lived"></dl>
     </div>
     <script>
-        // for (let i = 0; i < 5; i++) {
-        //     let newElement = document.createElement('div');
-        //     newElement.innerHTML = "this is a number" + (i + 1);
-        //     document.body.appendChild(newElement);
-        // }
+        for (let i = 0; i < 5; i++) {
+            let newElement = document.createElement('div');
+            newElement.innerHTML = "this is a number" + (i + 1);
+            document.body.appendChild(newElement);
+        }
 
 
         let myList = document.getElementById('myList');
@@ -76,6 +76,38 @@
             myTime.textContent = myDetails.length;
             document.getElementById('places-lived').appendChild(myTime);
         }
+
+        var personalInformation = {
+            "name": "Cole Williams",
+            "photos": "images/2021-09-20_22.22.34.png",
+            "favoriteFoods": ["pizza", "ice cream", "noodles"],
+            "hobbies": ["games", "rock climbing", "programming"],
+            "placesLived": [{
+                "place": ["Utah", "Arizona", "Idaho"],
+                "length": ["9 years", "9 years", "2 years"]
+            }]
+        };
+        console.log(personalInformation.placesLived.length);
+
+        const myInfo = {
+            name: 'Weylin Douglas',
+            photo: 'images/selfPortrait.jpg',
+            favoriteFoods: ['Steak', 'Pizza', 'Wings'],
+            hobbies: ['Fishing', 'Hiking', 'Coding']
+        };
+        myInfo.placesLived = [{
+                place: 'Oliverhurst, CA',
+                length: '18 years'
+            },
+            {
+                place: 'Charlotte, MI',
+                length: '5 years'
+            },
+            {
+                place: 'Laingsburg, MI',
+                length: "15 years"
+            }
+        ];
     </script>
 </body>
 

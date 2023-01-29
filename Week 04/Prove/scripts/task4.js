@@ -64,15 +64,10 @@ myInfo.hobbies.forEach(hobby =>{
 myInfo.placesLived.forEach((placeLived) =>{
     let places = document.createElement('dt');
     places.textContent = placeLived.place;
+    document.querySelector('#places-lived').appendChild(places);
 
     let timeLived = document.createElement('dd');
     timeLived.textContent = placeLived.length;
-
-    
-    document.querySelector('#places-lived').appendChild(places);
     document.querySelector('#places-lived').appendChild(timeLived);
 });
-
-
-
 
