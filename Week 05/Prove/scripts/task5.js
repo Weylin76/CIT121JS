@@ -141,3 +141,33 @@ document.querySelector('#sortBy').addEventListener("change", sortBy)
 
 // Consider adding a "Filter by" feature that allows users to filter the list of temples
 // This will require changes to both the HTML and the JavaScript files
+
+
+//Added a filter by year sort
+const sortByYear = () =>{
+    reset();
+
+    let filter = document.getElementById('sortByYear').value;
+
+    if (filter == 'templeYearAscending'){
+        output(
+            templeList.sort((list1, list2)=>{
+                let year1 = parseInt(list1.dedicated.substr(-4));
+                let year2 = parseInt(list2.dedicated.substr(-4));
+            console.log(year)
+            if (year1 < year2) return -1;
+            else if (year1 > year2) return 1;
+            else return 0;
+    
+        }))}
+    else if (filter == 'templeYearDescending'){
+        output(
+            templeList.sort((list1, list2)=>{
+                let year1 = parseInt(list1.dedicated.substr(-4));
+                let year2 = parseInt(list2.dedicated.substr(-4));
+            if (year1 > year2) return -1;
+            else if (year1 < year2) return 1;
+            else return 0;
+    }))}
+};
+document.querySelector('#sortByYear').addEventListener("change", sortByYear)
