@@ -32,7 +32,7 @@ function doStuffList(data) {
   const pokeListElement = document.querySelector("#outputList");
   const pokeList = data.results;
   pokeList.forEach((currentItem) => {
-    const html = `<li>${currentItem.name}</li><span>${currentItem.url}</span>`;
+    const html = `<h2>${currentItem.name}</h2>`;
     // note the += here...
     pokeListElement.innerHTML += html;
   });

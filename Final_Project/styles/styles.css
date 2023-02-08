@@ -1,0 +1,37 @@
+body{
+    width: 30%;
+    margin: 0 auto;
+    background-color: rgba(201, 197, 197, 0.984);
+}
+
+#wrapper{
+    max-width: 250px;
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: center;
+    background-color: yellow;
+}
+
+#output{
+    color: black;
+}
+div{
+    max-width: fit-content;
+    padding-top: 10px;
+}
+img{
+    display: block;
+    max-width: 100px;
+    border-radius: 10%;
+    border: 1px black solid;
+}
+h1{
+    color: rgb(30, 15, 94);
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#banner{
+    color:red;
+}
+

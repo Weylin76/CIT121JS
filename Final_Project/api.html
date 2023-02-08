@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="scripts/api.js" defer></script>
+    <script src="scripts/music.js" defer></script>
+    <script src="scripts/banner.js" defer></script>
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>ABC Company Employee List</title>
+
+</head>
+
+<body>
+    <h1>JavaScript Final Project</h1>
+    <marquee behavior="scoll" direction="left" id="banner"></marquee>
+    <div>Do you want to listen to cool tunes?</div>
+    <select name="music" id="music">
+        <option value="No">Stop</option>
+        <option value="Yes">Play</option>
+    </select>
+    <audio id="coolMusic" src="https://www.soundjay.com/free-music/sounds/cautious-path-01.mp3"></audio>
+    <p>ABC Company Employee List</p>
+    <section id="wrapper">
+        <div id="output"></div><br>
+        <div>Total of combined wages:</div>
+        <div id="allWages"></div>
+    </section>
+</body>
+
+</html>
