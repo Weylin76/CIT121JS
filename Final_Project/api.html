@@ -9,13 +9,18 @@
     <script src="scripts/music.js" defer></script>
     <script src="scripts/banner.js" defer></script>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" type="image/favicon" href="images/favicon.png">
     <title>ABC Company Employee List</title>
 
 </head>
 
 <body>
-    <h1>JavaScript Final Project</h1>
-    <marquee behavior="scoll" direction="left" id="banner"></marquee>
+    <header>
+        <h1>JavaScript Final Project</h1>
+        <marquee behavior="scoll" direction="left" id="banner"></marquee>
+    </header>
+
+
     <div>Do you want to listen to cool tunes?</div>
     <select name="music" id="music">
         <option value="No">Stop</option>
@@ -23,11 +28,11 @@
     </select>
     <audio id="coolMusic" src="https://www.soundjay.com/free-music/sounds/cautious-path-01.mp3"></audio>
     <p>ABC Company Employee List</p>
-    <section id="wrapper">
+    <div id="wrapper">
         <div id="output"></div><br>
         <div>Total of combined wages:</div>
         <div id="allWages"></div>
-    </section>
+    </div>
 </body>
 
 </html>
