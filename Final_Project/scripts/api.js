@@ -1,5 +1,4 @@
 const url = 'https://randomuser.me/api/?results=10';
-const btn = document.getElementById('button');
 const output = document.getElementById('output');
 let wage = [];
 
